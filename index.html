@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      .Dictionary {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      input {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+      }
+
+      input[type="button"] {
+        width: 80%;
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+        border: none;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .Dictionary-Contents {
+        margin-top: 20px;
+        text-align: left;
+      }
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 600px) {
+        input,
+        input[type="button"] {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Dictionary">
+      <h1>Dictionary</h1>
+      <input
+        type="text"
+        placeholder="Search eg:pending,confident, etc.."
+        id="searchInput"
+      />
+      <input type="button" value="Search" onclick="searchDictionary()" />
+      <div class="Dictionary-Contents" id="dictionaryContents"></div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
